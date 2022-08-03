@@ -24,7 +24,7 @@
   --flash-border-color: var(--color-attention-muted);
 }
 
-::part(content) {
+div[part=content] {
   display: flex;
   flex: 1;
 }
