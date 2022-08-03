@@ -1,0 +1,18 @@
+<h2>Rails rendered</h2>
+<%= render Flash.new do %>
+  Hello world!
+<% end %>
+<br />
+<%= render Flash.new(variant: :success) do %>
+  Hello world!
+<% end %>
+<br />
+<%= render Flash.new(variant: :warning) do %>
+  Hello world!
+<% end %>
+<br />
+<%= render Flash.new(variant: :danger) do %>
+  Hello world!
+<% end %>
+
+<h2>React rendered</h2>

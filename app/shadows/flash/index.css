@@ -1,0 +1,30 @@
+:host {
+  --flash-background-color: var(--color-accent-subtle);
+  --flash-border-color: var(--color-accent-muted);
+
+  display: flex;
+  background-color: var(--flash-background-color);
+  color: var(--color-fg-defult);
+  padding: var(--base-size-20) var(--base-size-16);
+  border-radius: var(--primer-borderRadius-medium);
+  border: var(--primer-borderWidth-thin) solid var(--flash-border-color);
+
+}
+
+:host([primer-variant="success"]) {
+  --flash-background-color: var(--color-success-subtle);
+  --flash-border-color: var(--color-success-muted);
+}
+:host([primer-variant="danger"]) {
+  --flash-background-color: var(--color-danger-subtle);
+  --flash-border-color: var(--color-danger-muted);
+}
+:host([primer-variant="warning"]) {
+  --flash-background-color: var(--color-attention-subtle);
+  --flash-border-color: var(--color-attention-muted);
+}
+
+::part(content) {
+  display: flex;
+  flex: 1;
+}
