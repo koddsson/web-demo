@@ -3,8 +3,9 @@
   Hello World!
 <% end %>
 <br />
-<%= render Flash.new(variant: :success) do %>
+<%= render Flash.new(variant: :success) do |c| %>
   Successful World
+  <%= c.icon(name: "squirrel") %>
 <% end %>
 <br />
 <%= render Flash.new(variant: :warning) do %>

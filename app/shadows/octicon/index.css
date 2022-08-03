@@ -1,0 +1,7 @@
+:host {
+  padding: 0 var(--base-size-6);
+}
+:host path {
+  display: none;
+}
+:host([name="squirrel"]) path[name="squirrel"] { display: block }
