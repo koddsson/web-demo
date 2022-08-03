@@ -8,4 +8,7 @@ class Flash < Shadow::Base
   renders_one :icon, lambda { |name:|
     Octicon.new name, slot: "icon"
   }
+
+  renders_one :body
+  renders_many :actions
 end

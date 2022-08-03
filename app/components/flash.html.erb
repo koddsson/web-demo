@@ -1,5 +1,10 @@
 <div primer-variant="<%= @variant.to_s %>">
   <%= shadow %>
-  <%= content %>
-  <%= @icon %>
+  <%= body %>
+  <%= icon %>
+  <% if actions? %>
+    <% actions.each do |action| %>
+      <div slot="actions"><%= action %></div>
+    <% end %>
+  <% end %>
 </div>

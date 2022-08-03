@@ -13,7 +13,10 @@ const App = () => {
         <Octicon name="squirrel"/>
       </Flash>
       <br />
-      <Flash variant="warning">Uh oh World</Flash>
+      <Flash variant="warning">
+        Uh oh World
+        <button>Dang!</button>
+      </Flash>
       <br />
       <Flash variant="danger">Bad World!</Flash>
     </>

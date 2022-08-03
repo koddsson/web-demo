@@ -1,19 +1,22 @@
 <h2>Rails rendered</h2>
-<%= render Flash.new do %>
-  Hello World!
+<%= render Flash.new do |c| %>
+  <%= c.with_body { "Hello World!" } %>
 <% end %>
 <br />
 <%= render Flash.new(variant: :success) do |c| %>
-  Successful World
-  <%= c.icon(name: "squirrel") %>
+  <%= c.with_body { "Successful World" } %>
+  <%= c.with_icon(name: "squirrel") %>
 <% end %>
 <br />
-<%= render Flash.new(variant: :warning) do %>
-  Uh oh World
+<%= render Flash.new(variant: :warning) do |c| %>
+  <%= c.with_body { "Uh oh World" } %>
+  <%= c.with_action do %>
+    <button>Dang!</button>
+  <% end %>
 <% end %>
 <br />
-<%= render Flash.new(variant: :danger) do %>
-  Bad World!
+<%= render Flash.new(variant: :danger) do |c| %>
+  <%= c.with_body { "Bad World!" } %>
 <% end %>
 
 <h2>React rendered</h2>
