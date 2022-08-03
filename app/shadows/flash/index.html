@@ -1,3 +1,5 @@
 <slot name="icon" part="icon"></slot>
 <slot part="content"></slot>
-<button>Dismiss</button>
+<slot part="actions">
+  <button onClick="this.getRootNode().host.remove()">Dismiss</button>
+</slot>

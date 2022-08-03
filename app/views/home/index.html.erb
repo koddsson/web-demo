@@ -1,18 +1,19 @@
 <h2>Rails rendered</h2>
 <%= render Flash.new do %>
-  Hello world!
+  Hello World!
 <% end %>
 <br />
 <%= render Flash.new(variant: :success) do %>
-  Hello world!
+  Successful World
 <% end %>
 <br />
 <%= render Flash.new(variant: :warning) do %>
-  Hello world!
+  Uh oh World
 <% end %>
 <br />
 <%= render Flash.new(variant: :danger) do %>
-  Hello world!
+  Bad World!
 <% end %>
 
 <h2>React rendered</h2>
+<div id="react-root"></div>
